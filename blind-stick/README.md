@@ -8,7 +8,7 @@ To improve obstacle awareness for visually impaired individuals by detecting nea
 
 ## Hardware Components
 - Arduino microcontroller
-- 2x Ultrasonic sensors (HC-SR04)
+- Ultrasonic sensors (HC-SR04)
 - Piezo buzzer
 - Power supply
 
