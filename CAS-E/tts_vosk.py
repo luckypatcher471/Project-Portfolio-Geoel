@@ -6,7 +6,7 @@ import pygame
 
 pygame.mixer.init()
 
-model_path = r"C:\Users\Geoel\OneDrive\Desktop\ema\Resources\vosk-model-small-en-us-0.15"
+model_path = r""
 
 model = vosk.Model(model_path)  # Ensure you have the correct path to the Vosk model
 recognizer = vosk.KaldiRecognizer(model, 16000)
@@ -38,4 +38,5 @@ def listen_with_vosk():
 while True:
     listen_with_vosk()
     
+
        
