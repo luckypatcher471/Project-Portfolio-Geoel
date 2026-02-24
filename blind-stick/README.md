@@ -1,36 +1,36 @@
-# Smart Assistive Blind Stick
+# Ultrasonic Presence-Based Study Timer
 
 ## Overview
-An Arduino-based assistive device designed to detect obstacles in close proximity using dual ultrasonic sensors and provide real-time audio alerts.
+An embedded system designed to monitor user presence using ultrasonic distance sensing and provide visual/audio feedback based on proximity.
 
 ## Objective
-To improve obstacle awareness for visually impaired individuals by detecting nearby objects and generating an audible warning signal.
+To create a basic accountability mechanism during study sessions by detecting whether the user remains within a predefined range.
 
 ## Hardware Components
 - Arduino microcontroller
-- Ultrasonic sensors (HC-SR04)
+- Ultrasonic sensor (HC-SR04)
+- LED indicator
 - Piezo buzzer
-- Power supply
 
-## System Logic
-1. Two ultrasonic sensors continuously measure distance.
-2. Distance is calculated using time-of-flight principle:
-   
-   Distance = Duration × 0.017
+## Working Principle
+1. The ultrasonic sensor emits a pulse.
+2. Echo duration is measured using time-of-flight principle.
+3. Distance is calculated:
 
-3. If either sensor detects an object within 10 cm:
-   - A 1000 Hz tone is generated using the piezo buzzer.
-4. If no obstacle is detected:
-   - The buzzer remains off.
+   Distance (cm) = Duration × 0.034 / 2
+
+4. If the measured distance is below 40 cm:
+   - LED and buzzer are activated.
+5. Otherwise:
+   - Outputs remain off.
 
 ## Key Learning Outcomes
-- Multi-sensor integration
-- Real-time signal processing
-- Threshold-based alert systems
-- Embedded C programming in Arduino
-- Hardware debugging and calibration
+- Distance measurement using ultrasonic sensors
+- Real-time threshold-based control
+- Basic embedded signal processing
+- Serial monitoring for debugging
 
-## Possible Improvements
-- Variable alert intensity based on distance
-- Vibration motor integration
-- Battery efficiency optimization
+## Future Improvements
+- Timer-based study session tracking
+- Data logging for performance monitoring
+- Adjustable threshold configuration
