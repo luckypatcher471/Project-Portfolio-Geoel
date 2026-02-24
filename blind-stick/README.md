@@ -1,21 +1,36 @@
 # Smart Assistive Blind Stick
 
 ## Overview
-An Arduino-based assistive system designed to help visually impaired individuals detect nearby obstacles using ultrasonic sensing.
+An Arduino-based assistive device designed to detect obstacles in close proximity using dual ultrasonic sensors and provide real-time audio alerts.
 
-## Problem Statement
-Visually impaired individuals may face difficulty detecting obstacles at close range while walking.
+## Objective
+To improve obstacle awareness for visually impaired individuals by detecting nearby objects and generating an audible warning signal.
 
-## System Design
-- Ultrasonic sensor for distance measurement
-- Arduino microcontroller for real-time processing
-- Buzzer for proximity alert
+## Hardware Components
+- Arduino microcontroller
+- 2x Ultrasonic sensors (HC-SR04)
+- Piezo buzzer
+- Power supply
 
-## Working Principle
-When an obstacle is detected within a predefined threshold distance, the buzzer activates to alert the user.
+## System Logic
+1. Two ultrasonic sensors continuously measure distance.
+2. Distance is calculated using time-of-flight principle:
+   
+   Distance = Duration × 0.017
 
-## Learning Outcomes
-- Sensor integration
-- Threshold-based control logic
-- Embedded system debugging
-- Practical hardware implementation
+3. If either sensor detects an object within 10 cm:
+   - A 1000 Hz tone is generated using the piezo buzzer.
+4. If no obstacle is detected:
+   - The buzzer remains off.
+
+## Key Learning Outcomes
+- Multi-sensor integration
+- Real-time signal processing
+- Threshold-based alert systems
+- Embedded C programming in Arduino
+- Hardware debugging and calibration
+
+## Possible Improvements
+- Variable alert intensity based on distance
+- Vibration motor integration
+- Battery efficiency optimization
