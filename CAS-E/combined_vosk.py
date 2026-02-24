@@ -9,12 +9,12 @@ import io
 #initialize pygame mixer for audio playback
 
 pygame.mixer.init()
-model_path = r"C:\Users\Geoel\OneDrive\Desktop\ema\Resources\vosk-model-small-en-us-0.15"
+model_path = r""
 model = vosk.Model(model_path)  # Ensure you have the correct path to the Vosk model
 recognizer=vosk.KaldiRecognizer(model,16000)
 
 #configure the Gemini API client
-genai.configure(api_key="AIzaSyA_vGq9N5vFjpn4suG6Btcyy_yC2LsM-Ys")
+genai.configure(api_key="")
 # Function to play prompt audio
 def play_sound(file_path):
     pygame.mixer.music.load(file_path)
@@ -138,3 +138,4 @@ audio_response=text_to_speech(ai_response,emotion=emotion)
 
 
    
+
