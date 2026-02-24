@@ -20,12 +20,12 @@ An assistive embedded system designed to help visually impaired individuals dete
 ### 2. Ultrasonic Study Timer
 A distance-based presence detection system that activates a study timer only when the user is within a defined range.
 
-### 3. Voice-Based Assistant (Ongoing)
-A modular voice-based assistant integrating speech recognition, language model reasoning, and text-to-speech synthesis.
+### 3. CAS-E(Campus based Social Robot with Emotion) (Ongoing)
+A Cobot with Anthromorphic characteristics with wholesome HRI as key focus.
 
 ### 4. Robotic Manipulator Mini Project
 A foundational implementation of robotic arm modeling and control concepts.
 
 ---
 
-This repository contains source code, project documentation, and supporting materials for the above systems.
+
