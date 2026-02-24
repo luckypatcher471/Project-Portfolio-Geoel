@@ -2,7 +2,7 @@
 import google.generativeai as genai
 
 #configure the Gemini API client
-genai.configure(api_key="AIzaSyA_vGq9N5vFjpn4suG6Btcyy_yC2LsM-Ys")
+genai.configure(api_key="")
 
 def gemini_api(text):
     #initialize the Gemini API client   
@@ -14,4 +14,5 @@ def gemini_api(text):
 
 #-----Main----
 text="what is the weather like in kerala?"  
+
 gemini_api(text)
