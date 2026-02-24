@@ -9,7 +9,7 @@ import io
 #initialize pygame mixer for audio playback
 
 pygame.mixer.init()
-model_path = r""
+model_path = r""#enter model path
 model = vosk.Model(model_path)  # Ensure you have the correct path to the Vosk model
 recognizer=vosk.KaldiRecognizer(model,16000)
 
@@ -138,4 +138,5 @@ audio_response=text_to_speech(ai_response,emotion=emotion)
 
 
    
+
 
