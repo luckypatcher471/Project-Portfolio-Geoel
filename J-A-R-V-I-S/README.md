@@ -1,16 +1,16 @@
-# 🤖 J.A.R.V.I.S - AI Voice Assistant
+#  J.A.R.V.I.S - AI Voice Assistant
 
 A desktop AI voice assistant built with Python, powered by Google Gemini API.
 
 Jarvis can:
-- 🎤 Listen to your voice
-- 🤖 Generate intelligent responses using Gemini
-- 🗣 Speak responses using Text-to-Speech
-- 🖥 Display conversation in a GUI
+-  Listen to your voice
+-  Generate intelligent responses using Gemini
+-  Speak responses using Text-to-Speech
+-  Display conversation in a GUI
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Speech-to-Text (Google Speech Recognition)
 - AI Response Generation (Gemini 2.5 Flash)
@@ -20,7 +20,7 @@ Jarvis can:
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - Python 3.x
 - Tkinter
